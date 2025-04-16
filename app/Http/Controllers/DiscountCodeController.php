@@ -35,7 +35,7 @@ class DiscountCodeController extends Controller
     public function edit($id)
     {
         $code = DiscountCode::findOrFail($id);
-        return view('discount_codes.edit', compact('code'));
+        return view('admin.discountcodes.edit', compact('code'));
     }
 
     public function update(Request $request, $id)
